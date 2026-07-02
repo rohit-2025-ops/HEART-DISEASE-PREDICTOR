@@ -229,29 +229,6 @@ Heart Disease Prediction
 ```
 
 ---
-
-# 📷 Application Screenshots
-
-## 🏠 Heart Disease Prediction Page
-
-<p align="center">
-<img src="images/prediction_page.png" alt="Prediction Page" width="900">
-</p>
-
-This page allows users to enter patient information such as age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, ECG results, maximum heart rate, exercise-induced angina, ST depression, and other clinical parameters. After clicking the prediction button, the application instantly predicts whether the patient is likely to have heart disease using the trained Machine Learning model.
-
----
-
-## 📊 Model Information Page
-
-<p align="center">
-<img src="images/model_information.png" alt="Model Information" width="900">
-</p>
-
-This page provides a visual comparison of the performance of all trained Machine Learning models. The interactive bar chart displays the prediction accuracy of Decision Tree, Logistic Regression, Random Forest, and Support Vector Machine (SVM). Random Forest achieved the highest accuracy and was selected as the final prediction model.
-
----
-
 # 📌 Future Improvements
 
 - 🔐 User Authentication
@@ -300,14 +277,6 @@ git push origin feature-name
 📧 **Email:** ronidutta854@gmail.com
 
 🐙 **GitHub:** https://github.com/rohit-2025-ops
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
 
 <div align="center">
 
