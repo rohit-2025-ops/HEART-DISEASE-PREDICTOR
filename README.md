@@ -1,207 +1,254 @@
 <div align="center">
 
-# ❤️ Heart Disease Predictor
+# ❤️ Heart Disease Prediction using Machine Learning
 
-### 🚀 Machine Learning-Based Heart Disease Prediction System
+### 🩺 Streamlit Web Application for Predicting Heart Disease
 
-<img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn">
-<img src="https://img.shields.io/badge/Flask-Web%20App-black?style=for-the-badge&logo=flask">
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+<p align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy)
 
-### ❤️ Predict Heart Disease Using Machine Learning
+</p>
 
-*A simple and intelligent web application that predicts the likelihood of heart disease based on patient health parameters.*
+### ❤️ Predict Heart Disease Risk using Machine Learning
+
+A Machine Learning web application built with **Streamlit** that predicts the likelihood of heart disease using multiple classification algorithms.
+
+⭐ **If you like this project, please give it a Star!**
 
 </div>
 
 ---
 
-# 📌 Project Overview
+# 📖 Project Overview
 
-Heart Disease Predictor is a Machine Learning project that predicts whether a person is at risk of heart disease using medical attributes such as:
+Heart disease is one of the leading causes of death worldwide. Early prediction can help doctors and patients take preventive measures.
 
-- 👤 Age
-- 🚻 Gender
-- ❤️ Chest Pain Type
-- 🩸 Blood Pressure
-- 🧪 Cholesterol
-- 🩺 Fasting Blood Sugar
-- 📈 Maximum Heart Rate
-- 💓 Exercise-Induced Angina
-- 📊 ST Depression
-- 🫀 Other clinical parameters
+This project uses Machine Learning algorithms trained on a heart disease dataset to predict whether a patient is likely to have heart disease based on medical parameters.
 
-The model is trained on a heart disease dataset and deployed using **Flask**.
+The application provides an easy-to-use **Streamlit interface** where users can enter patient information and receive instant predictions.
 
 ---
 
 # ✨ Features
 
 - ❤️ Heart Disease Prediction
-- 🤖 Machine Learning Model
-- 🌐 Flask Web Application
-- 📊 User-Friendly Interface
-- ⚡ Fast Predictions
-- 📈 High Accuracy
-- 💻 Easy to Use
+- 🤖 Multiple Machine Learning Models
+- 🌳 Decision Tree
+- 📈 Logistic Regression
+- 🌲 Random Forest
+- ⚡ Support Vector Machine (SVM)
+- 🎨 Interactive Streamlit Interface
+- 📊 Real-Time Prediction
+- 🚀 Fast and Easy to Use
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Technologies Used
 
-| Technology | Usage |
-|------------|-------|
+| Technology | Purpose |
+|------------|---------|
 | Python | Programming Language |
-| Pandas | Data Processing |
-| NumPy | Numerical Computation |
+| Streamlit | Web Application |
 | Scikit-Learn | Machine Learning |
-| Flask | Web Framework |
-| HTML | Frontend |
-| CSS | Styling |
-| Bootstrap | Responsive Design |
+| Pandas | Data Analysis |
+| NumPy | Numerical Computation |
+| Pickle | Model Serialization |
 
 ---
 
 # 📂 Project Structure
 
 ```text
-HEART-DISEASE-PREDICTOR/
+HEART_DISEASE_PREDICTION/
 │
-├── static/
-│   ├── css/
-│   ├── images/
-│
-├── templates/
-│   ├── index.html
-│   └── result.html
-│
-├── model/
-│   └── model.pkl
-│
-├── app.py
-├── train_model.py
-├── requirements.txt
-├── README.md
-└── dataset.csv
+├── .git/
+├── .gitignore
+├── .ipynb_checkpoints/
+├── App.py
+├── Heart_Disease.ipynb
+├── heart.csv
+├── DecisionTree.pkl
+├── LogisticR.pkl
+├── RandomForest.pkl
+├── SVM.pkl
+└── README.md
+```
+
+---
+
+# 🤖 Machine Learning Models
+
+The following Machine Learning algorithms were implemented and evaluated:
+
+- 🌳 Decision Tree
+- 📈 Logistic Regression
+- 🌲 Random Forest
+- ⚡ Support Vector Machine (SVM)
+
+---
+
+# 📊 Dataset
+
+The dataset contains patient medical information including:
+
+- Age
+- Sex
+- Chest Pain Type
+- Resting Blood Pressure
+- Cholesterol
+- Fasting Blood Sugar
+- Resting ECG
+- Maximum Heart Rate
+- Exercise Induced Angina
+- ST Depression
+- Number of Major Vessels
+- Thalassemia
+
+These features are used to predict the presence of heart disease.
+
+---
+
+# 📈 Model Performance
+
+The following metrics were calculated on the test dataset.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|:------|:--------:|:---------:|:------:|:--------:|
+| 🌳 Decision Tree | **80.43%** | **86.67%** | **76.47%** | **81.25%** |
+| 📈 Logistic Regression | **85.87%** | **85.85%** | **89.22%** | **87.50%** |
+| 🌲 Random Forest | **88.59%** | **89.32%** | **90.20%** | **89.76%** 🏆 |
+| ⚡ Support Vector Machine | **72.83%** | **74.07%** | **78.43%** | **76.19%** |
+
+---
+
+# 🏆 Best Performing Model
+
+🥇 **Random Forest** achieved the highest performance among all models.
+
+| Metric | Score |
+|---------|-------|
+| 🎯 Accuracy | **88.59%** |
+| 🎯 Precision | **89.32%** |
+| 🎯 Recall | **90.20%** |
+| 🎯 F1 Score | **89.76%** |
+
+---
+
+## 📊 Accuracy Comparison
+
+```text
+Random Forest        ██████████████████ 88.59%
+Logistic Regression  █████████████████  85.87%
+Decision Tree        ████████████████   80.43%
+SVM                  ██████████████     72.83%
+```
+
+---
+
+## 📊 F1-Score Comparison
+
+```text
+Random Forest        ██████████████████ 89.76%
+Logistic Regression  █████████████████  87.50%
+Decision Tree        ███████████████    81.25%
+SVM                  ██████████████     76.19%
 ```
 
 ---
 
 # 🚀 Installation
 
-### Clone the Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/rohit-2025-ops/HEART-DISEASE-PREDICTOR.git
 ```
 
-Move into the project folder
+### Go to Project Directory
 
 ```bash
 cd HEART-DISEASE-PREDICTOR
 ```
 
-Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-Activate Environment
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### Linux / Mac
-
-```bash
-source venv/bin/activate
-```
-
-Install Dependencies
+### Install Required Libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Application
+### Run the Streamlit Application
 
 ```bash
-python app.py
+streamlit run App.py
 ```
 
 ---
 
-# 📊 Machine Learning Workflow
+# 🔄 Project Workflow
 
-```
-Data Collection
-       │
-       ▼
-Data Cleaning
-       │
-       ▼
-Feature Engineering
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
+```text
+Medical Dataset
+      │
+      ▼
+Data Preprocessing
+      │
+      ▼
+Feature Selection
+      │
+      ▼
+Train-Test Split
+      │
+      ▼
 Model Training
-       │
-       ▼
+      │
+      ▼
+Decision Tree
+Logistic Regression
+Random Forest
+Support Vector Machine
+      │
+      ▼
 Model Evaluation
-       │
-       ▼
-Prediction
-       │
-       ▼
-Flask Deployment
+      │
+      ▼
+Save Trained Models (.pkl)
+      │
+      ▼
+Streamlit Web Application
+      │
+      ▼
+Heart Disease Prediction
 ```
 
 ---
 
-# 📈 Model Performance
+# 📷 Application Screenshots
 
-| Metric | Score |
-|---------|--------|
-| Accuracy | XX% |
-| Precision | XX% |
-| Recall | XX% |
-| F1 Score | XX% |
+> Add screenshots of your Streamlit application here.
 
-> Replace the values with your actual model results.
+### 🏠 Home Page
 
----
+<img src="images/home.png" width="800">
 
-# 📷 Screenshots
+### ❤️ Prediction Result
 
-Add screenshots here.
-
-```
-Home Page
-
-Prediction Page
-
-Result Page
-```
+<img src="images/result.png" width="800">
 
 ---
 
-# 🔮 Future Improvements
+# 📌 Future Improvements
 
-- Deep Learning Model
-- Better UI/UX
-- Authentication System
-- Cloud Deployment
-- Explainable AI (SHAP/LIME)
-- Real-Time Health Monitoring
+- 🔐 User Authentication
+- ☁️ Cloud Deployment
+- 📊 Model Performance Dashboard
+- 📈 More Advanced ML Models
+- 🧠 Explainable AI (SHAP/LIME)
+- 📱 Mobile Responsive Interface
 
 ---
 
@@ -210,10 +257,38 @@ Result Page
 Contributions are welcome!
 
 1. Fork the repository
+
 2. Create a new branch
+
+```bash
+git checkout -b feature-name
+```
+
 3. Commit your changes
-4. Push your branch
-5. Open a Pull Request
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature-name
+```
+
+5. Create a Pull Request
+
+---
+
+# 👨‍💻 Author
+
+## Rohit Dutta
+
+🎓 Artificial Intelligence & Machine Learning Student
+
+📧 **Email:** ronidutta854@gmail.com
+
+🐙 **GitHub:** https://github.com/rohit-2025-ops
 
 ---
 
@@ -223,22 +298,12 @@ This project is licensed under the MIT License.
 
 ---
 
-# 👨‍💻 Author
-
-## Rohit Dutta
-
-🎓 AIML Student
-
-📧 Email: ronidutta854@example.com
-
-🔗 GitHub: https://github.com/rohit-2025-ops
-
----
-
 <div align="center">
 
-### ⭐ If you like this project, don't forget to Star the Repository ⭐
+## ❤️ Thank You for Visiting ❤️
 
-❤️ Thank You ❤️
+### ⭐ If you found this project helpful, please give it a Star ⭐
+
+Made with ❤️ by **Rohit Dutta**
 
 </div>
