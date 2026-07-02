@@ -229,7 +229,7 @@ This project is licensed under the MIT License.
 
 🎓 AIML Student
 
-📧 Email: your-email@example.com
+📧 Email: ronidutta854@example.com
 
 🔗 GitHub: https://github.com/rohit-2025-ops
 
