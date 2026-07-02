@@ -76,7 +76,10 @@ HEART_DISEASE_PREDICTION/
 ├── LogisticR.pkl
 ├── RandomForest.pkl
 ├── SVM.pkl
-└── README.md
+├── README.md
+└── images/
+    ├── prediction_page.png
+    └── model_information.png
 ```
 
 ---
@@ -229,15 +232,23 @@ Heart Disease Prediction
 
 # 📷 Application Screenshots
 
-> Add screenshots of your Streamlit application here.
+## 🏠 Heart Disease Prediction Page
 
-### 🏠 Home Page
+<p align="center">
+<img src="images/prediction_page.png" alt="Prediction Page" width="900">
+</p>
 
-<img src="images/home.png" width="800">
+This page allows users to enter patient information such as age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, ECG results, maximum heart rate, exercise-induced angina, ST depression, and other clinical parameters. After clicking the prediction button, the application instantly predicts whether the patient is likely to have heart disease using the trained Machine Learning model.
 
-### ❤️ Prediction Result
+---
 
-<img src="images/result.png" width="800">
+## 📊 Model Information Page
+
+<p align="center">
+<img src="images/model_information.png" alt="Model Information" width="900">
+</p>
+
+This page provides a visual comparison of the performance of all trained Machine Learning models. The interactive bar chart displays the prediction accuracy of Decision Tree, Logistic Regression, Random Forest, and Support Vector Machine (SVM). Random Forest achieved the highest accuracy and was selected as the final prediction model.
 
 ---
 
