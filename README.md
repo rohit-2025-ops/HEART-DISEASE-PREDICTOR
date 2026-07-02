@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Heart Disease Prediction System
 
 ## Project Overview
@@ -45,3 +46,7 @@ Run the app
 ```bash
 streamlit run App.py
 ```
+=======
+# HEART-DISEASE-PREDICTOR
+PREDICTION OF HEART DISEASE
+>>>>>>> 157c989a2e3cf6ec1f09e02f57734b34b236c8cb
